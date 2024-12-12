@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <bits/pthreadtypes.h>
 
 #define GRID_SIZE 20
 #define NUM_THREADS 4
