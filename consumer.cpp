@@ -172,7 +172,7 @@ public:
 
         if (sharedData->flag[0] == 0)
         {
-            cout << "| ALUMINIUM     |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| ALUMINIUM     |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -195,7 +195,7 @@ public:
 
         if (!sharedData->flag[1])
         {
-            cout << "| COPPER        |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| COPPER        |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -219,7 +219,7 @@ public:
 
         if (!sharedData->flag[2])
         {
-            cout << "| COTTON        |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| COTTON        |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -243,18 +243,18 @@ public:
 
         if (!sharedData->flag[3])
         {
-            cout << "| CURDEOIL      |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| CRUDEOIL      |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
-            if (sharedData->priceHistory[3][(sharedData->historyIndex[3] - 2 + 4) % 4] < sharedData->priceHistory[2][(sharedData->historyIndex[3] - 1 + 4) % 4]) // last price < current price
-                cout << "| CURDEOIL      |"  << setw(7) << "\033[;32m" << sharedData->priceHistory[3][(sharedData->historyIndex[3] - 1 + 4) % 4] << "↑\033[0m" << "     |";
+            if (sharedData->priceHistory[3][(sharedData->historyIndex[3] - 2 + 4) % 4] < sharedData->priceHistory[3][(sharedData->historyIndex[3] - 1 + 4) % 4]) // last price < current price
+                cout << "| CRUDEOIL      |"  << setw(7) << "\033[;32m" << sharedData->priceHistory[3][(sharedData->historyIndex[3] - 1 + 4) % 4] << "↑\033[0m" << "     |";
             
             else if(sharedData->priceHistory[3][(sharedData->historyIndex[3] - 2 + 4) % 4] > sharedData->priceHistory[3][(sharedData->historyIndex[3] - 1 + 4) % 4])
-                cout << "| CURDEOIL      |"<< setw(7) << "\033[;31m" << sharedData->priceHistory[3][(sharedData->historyIndex[3] - 1 + 4) % 4] << "↓\033[0m" << "     |";
+                cout << "| CRUDEOIL      |"<< setw(7) << "\033[;31m" << sharedData->priceHistory[3][(sharedData->historyIndex[3] - 1 + 4) % 4] << "↓\033[0m" << "     |";
 
             else
-                cout << "| CURDEOIL      |"<< setw(7) << sharedData->priceHistory[3][(sharedData->historyIndex[3] - 1 + 4) % 4] << "      |";
+                cout << "| CRUDEOIL      |"<< setw(7) << sharedData->priceHistory[3][(sharedData->historyIndex[3] - 1 + 4) % 4] << "      |";
 
             double avg = calculateAverage(3);
             if (sharedData->avgHistory[3] < avg)
@@ -267,7 +267,7 @@ public:
 
         if (!sharedData->flag[4])
         {
-            cout << "| GOLD          |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| GOLD          |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -291,7 +291,7 @@ public:
 
         if (!sharedData->flag[5])
         {
-            cout << "| LEAD          |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| LEAD          |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -315,7 +315,7 @@ public:
 
         if (!sharedData->flag[6])
         {
-            cout << "| MENTHAOIL     |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| MENTHAOIL     |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -339,7 +339,7 @@ public:
 
         if (!sharedData->flag[7])
         {
-            cout << "| NATURALGAS    |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| NATURALGAS    |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -363,7 +363,7 @@ public:
 
         if (!sharedData->flag[8])
         {
-            cout << "| NICKEL        |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| NICKEL        |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -387,7 +387,7 @@ public:
 
         if (!sharedData->flag[9])
         {
-            cout << "| SILVER        |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| SILVER        |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
@@ -411,7 +411,7 @@ public:
 
         if (!sharedData->flag[10])
         {
-            cout << "| ZINC          |" << setw(7) << 0.00 << "    | " << setw(7) << 0.00 << "  |" << endl;
+            cout << "| ZINC          |" << setw(7) << "0.00" << "    | " << setw(7) << "0.00" << "   |" << endl;
         }
         else
         {
